@@ -1,0 +1,635 @@
+.body,
+.html {
+    position: relative;
+    height: 100%;
+}
+
+@function pxrem($px) {
+    @return $px/75+rem;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.f1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    animation: bg_box 2s linear;
+}
+
+
+.music {
+    position: absolute;
+    top: pxrem(20);
+    right: pxrem(20);
+    width: pxrem(90);
+    height: pxrem(90);
+    z-index: 999;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.header {
+    width: 100%;
+    height: pxrem(300);
+
+
+}
+
+.logo {
+    width: pxrem(210);
+    height: pxrem(50);
+    margin-top: pxrem(20);
+    margin-left: pxrem(20);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.contentbox {
+    position: relative;
+    flex: 1;
+    width: 100%;
+
+    .content_img {
+        width: 100%;
+        height: pxrem(900);
+        padding-top: pxrem(100);
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: pxrem(380);
+        height: pxrem(180);
+
+        img {
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+
+
+    }
+}
+
+.hover_up {
+    width: pxrem(40);
+    height: pxrem(55);
+    position: absolute;
+    top: pxrem(20);
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%, 0);
+    background: url(../images/arrow-up-blue.png) no-repeat;
+    animation: hover_up 1.2s linear infinite normal;
+}
+
+.footer {
+    width: 100%;
+    height: pxrem(182);
+    position: relative;
+
+
+
+    .swiper-wrapper {
+        transition-timing-function: linear;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.f2 {
+    width: 100%;
+    height: 100%;
+    background: #fe657a;
+}
+
+.bg_boy {
+    margin-top: pxrem(100);
+    margin-left: pxrem(120);
+    width: pxrem(600);
+    height: pxrem(1000);
+    background: url(../images/boy.gif)no-repeat;
+    background-size: 100% 100%;
+}
+
+.light {
+    position: absolute;
+    top: pxrem(100);
+    right: pxrem(-190);
+    width: pxrem(780);
+    height: pxrem(1100);
+    background: url(../images/FixDogLight.png)no-repeat;
+    background-size: 100% 100%;
+    transform: skewX(-2deg);
+}
+
+.stars {
+    position: absolute;
+    bottom: pxrem(250);
+    left: pxrem(-5);
+    width: pxrem(600);
+    height: pxrem(1100);
+    background: url(../images/starsLeft.png)no-repeat left;
+    background-size: 100% 100%;
+}
+
+.my {
+    position: absolute;
+    bottom: pxrem(330);
+    right: pxrem(80);
+    width: pxrem(90);
+    height: pxrem(90);
+    background: url(../images/selerTxtRightMe.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.dog {
+    position: absolute;
+    bottom: pxrem(180);
+    right: pxrem(120);
+    width: pxrem(55);
+    height: pxrem(220);
+    background: url(../images/selerTxtRightTitle.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.renxin {
+    position: absolute;
+    bottom: pxrem(30);
+    right: pxrem(10);
+    width: pxrem(150);
+    height: pxrem(350);
+    background: url(../images/selerTxtRight.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.font1 {
+    position: absolute;
+    top: pxrem(20);
+    left: pxrem(45);
+    width: pxrem(130);
+    height: pxrem(320);
+    background: url(../images/selerTxtLeft01.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.font2 {
+    position: absolute;
+    top: pxrem(20);
+    left: pxrem(45);
+    width: pxrem(130);
+    height: pxrem(320);
+    background: url(../images/selerTxtLeft02.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.font3 {
+    position: absolute;
+    top: pxrem(20);
+    left: pxrem(40);
+    width: pxrem(140);
+    height: pxrem(320);
+    background: url(../images/selerTxtLeft03.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.font4 {
+    position: absolute;
+    top: pxrem(20);
+    left: pxrem(35);
+    width: pxrem(140);
+    height: pxrem(320);
+    background: url(../images/selerTxtLeft04.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.withe2 {
+    position: absolute;
+    left: 50%;
+    bottom: pxrem(20);
+    width: pxrem(40);
+    height: pxrem(55);
+    transform: translate(-50%, -50%);
+    background: url(../images/arrow-up.png) no-repeat;
+}
+
+.f3 {
+    width: 100%;
+    height: 100%;
+    background: #09bee3;
+
+    .girl {
+        margin-top: pxrem(100);
+        margin-left: pxrem(25);
+        width: pxrem(600);
+        height: pxrem(1000);
+        background: url(../images/girl.gif)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .light {
+        position: absolute;
+        top: pxrem(180);
+        left: pxrem(-190);
+        width: pxrem(780);
+        height: pxrem(1100);
+        background: url(../images/FixCatLight.png)no-repeat;
+        background-size: 100% 100%;
+        transform: skewX(5deg);
+
+    }
+
+    .my {
+        position: absolute;
+        top: pxrem(30);
+        left: pxrem(30);
+        width: pxrem(90);
+        height: pxrem(90);
+        background: url(../images/selerTxtRightMe.png)no-repeat center;
+        background-size: 100% 100%;
+    }
+
+    .dog {
+        position: absolute;
+        top: pxrem(45);
+        left: pxrem(30);
+        width: pxrem(55);
+        height: pxrem(220);
+        background: url(../images/marketTxtLeftTitle.png)no-repeat center;
+        background-size: 100% 100%;
+    }
+
+    .renxin {
+        position: absolute;
+        top: pxrem(45);
+        left: pxrem(40);
+        width: pxrem(150);
+        height: pxrem(350);
+        background: url(../images/marketTxtLeft.png)no-repeat center;
+        background-size: 100% 100%;
+    }
+
+    .fo1 {
+        position: absolute;
+        bottom: pxrem(20);
+        right: pxrem(40);
+        width: pxrem(130);
+        height: pxrem(300);
+        background: url(../images/marketTxtRight04.png)no-repeat center;
+        background-size: 100% 100%;
+    }
+
+    .fo2 {
+        position: absolute;
+        bottom: pxrem(20);
+        right: pxrem(40);
+        width: pxrem(130);
+        height: pxrem(300);
+        background: url(../images/marketTxtRight03.png)no-repeat center;
+        background-size: 100% 100%;
+    }
+
+    .fo3 {
+        position: absolute;
+        bottom: pxrem(20);
+        right: pxrem(30);
+        width: pxrem(140);
+        height: pxrem(300);
+        background: url(../images/marketTxtRight02.png)no-repeat center;
+        background-size: 100% 100%;
+    }
+
+    .fo4 {
+        position: absolute;
+        bottom: pxrem(20);
+        right: pxrem(30);
+        width: pxrem(140);
+        height: pxrem(300);
+        background: url(../images/marketTxtRight01.png)no-repeat center;
+        background-size: 100% 100%;
+    }
+
+}
+
+.f4 {
+    width: 100%;
+    height: 100%;
+    background: #36a15c;
+
+    .bg_boy {
+        position: absolute;
+        right: 0;
+        top: pxrem(-100);
+        width: pxrem(750);
+        height: pxrem(1150);
+        background: url(../images/catFix.gif)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .bg_boy2 {
+        position: absolute;
+        top: pxrem(0);
+        left: pxrem(0);
+        width: pxrem(750);
+        height: pxrem(1150);
+        background: url(../images/dogFix.gif)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .light {
+        position: absolute;
+        top: pxrem(0);
+        right: pxrem(50);
+        width: pxrem(650);
+        height: pxrem(1150);
+        background: url(../images/FixDogLight.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .light2 {
+        position: absolute;
+        top: pxrem(0);
+        left: pxrem(50);
+        width: pxrem(650);
+        height: pxrem(1150);
+        background: url(../images/FixCatLight.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .xuan {
+        z-index: 8;
+        position: absolute;
+        top: pxrem(50);
+        left: pxrem(0);
+        width: pxrem(700);
+        height: pxrem(900);
+        background: url(../images/FixDogTxt.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .x2 {
+        top: pxrem(50);
+        right: pxrem(0);
+        background: url(../images/FixCatTxt.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .dashi {
+        position: absolute;
+        left: 0;
+        top: pxrem(120);
+        width: pxrem(750);
+        height: pxrem(1000);
+        background: url(../images/FixDogBtn.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .qicai {
+        position: absolute;
+        right: 0;
+        top: pxrem(120);
+        width: pxrem(750);
+        height: pxrem(1000);
+        background: url(../images/FixCatBtn.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .you {
+        position: absolute;
+        left: 50%;
+        bottom: pxrem(70);
+        width: pxrem(180);
+        height: pxrem(70);
+        transform: translate(-50%, 0);
+        background: url(../images/FixArrowTxt.png)no-repeat;
+        background-size: 100% 100%;
+
+        .y2 {
+            position: absolute;
+            top: 0;
+            margin-left: pxrem(-90);
+            background: url(../images/FixArrowTxtYou.png)no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+
+}
+
+.f5 {
+    width: 100%;
+    height: 100%;
+    background: #669cff;
+
+    .chaoyue {
+        position: absolute;
+        left: 50%;
+        width: pxrem(300);
+        height: pxrem(180);
+        margin-top: pxrem(90);
+        transform: translate(-50%, 0);
+        background: url(../images/titlesAcoreSummer.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .dian {
+        position: absolute;
+        top: pxrem(200);
+        left: 50%;
+        width: pxrem(5);
+        height: pxrem(100);
+        margin-top: pxrem(170);
+        transform: translate(-50%, 0);
+        background: url(../images/titlesDots.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .job {
+        position: absolute;
+        left: pxrem(20);
+        bottom: pxrem(200);
+        width: pxrem(700);
+        height: pxrem(480);
+        background: url(../images/jobTitle01.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .j2 {
+        background: url(../images/jobTitle02.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .j3 {
+        background: url(../images/jobTitle03.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .j4 {
+        background: url(../images/jobTitle04.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .j5 {
+        background: url(../images/jobTitle05.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .j6 {
+        background: url(../images/jobTitle06.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .j7 {
+        background: url(../images/jobTitle07.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .j8 {
+        background: url(../images/jobTitle08.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+
+}
+
+.f6 {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+
+    .end {
+        position: absolute;
+        left: 50%;
+        width: pxrem(500);
+        height: pxrem(55);
+        margin-top: pxrem(-150);
+        transform: translate(-50%, 0);
+        background: url(../images/endTxt2015.jpg)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .input {
+        position: absolute;
+        border: 1px solid #ccc;
+        left: 50%;
+        width: pxrem(500);
+        height: pxrem(55);
+        margin-top: pxrem(20);
+        transform: translate(-50%, 0);
+        background: url(../images/searchTxt.png)no-repeat left center;
+        background-size: 41% 46%;
+    }
+
+    .btn {
+        position: absolute;
+        background: #669cff;
+        top: pxrem(-20);
+        right: 0;
+        width: pxrem(60);
+        height: pxrem(55);
+        margin-top: pxrem(20);
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .foot1 {
+        position: absolute;
+        bottom: pxrem(250);
+        left: 50%;
+        width: pxrem(180);
+        height: pxrem(30);
+        transform: translate(-50%, 0);
+        background: url(../images/endBtnGuide.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .fo1 {
+        position: absolute;
+        left: pxrem(120);
+        bottom: pxrem(170);
+        width: pxrem(230);
+        height: pxrem(70);
+        background: url(../images/btnFollowNestle.png)no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .fo2 {
+        position: absolute;
+        right: pxrem(120);
+        bottom: pxrem(170);
+        width: pxrem(230);
+        height: pxrem(70);
+        background: url(../images/btnJoin.png)no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+
+.myAni {
+    animation-name: img_show;
+}
+
+
+
+@keyframes bg_box {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes img_show {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes hover_up {
+    0% {
+        top: pxrem(20);
+        background: url(../images/arrow-up-blue.png) no-repeat;
+    }
+
+    100% {
+        top: pxrem(0);
+        background: url(../images/arrow-up.png)no-repeat;
+    }
+}

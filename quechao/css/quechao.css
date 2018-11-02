@@ -1,0 +1,610 @@
+.body,
+.html {
+  position: relative;
+  height: 100%;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.f1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  animation: bg_box 2s linear;
+}
+
+.music {
+  position: absolute;
+  top: 0.26667rem;
+  right: 0.26667rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  z-index: 999;
+}
+
+.music img {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 4rem;
+}
+
+.logo {
+  width: 2.8rem;
+  height: 0.66667rem;
+  margin-top: 0.26667rem;
+  margin-left: 0.26667rem;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.contentbox {
+  position: relative;
+  flex: 1;
+  width: 100%;
+}
+
+.contentbox .content_img {
+  width: 100%;
+  height: 12rem;
+  padding-top: 1.33333rem;
+}
+
+.contentbox .content_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.contentbox .content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 5.06667rem;
+  height: 2.4rem;
+}
+
+.contentbox .content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hover_up {
+  width: 0.53333rem;
+  height: 0.73333rem;
+  position: absolute;
+  top: 0.26667rem;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, 0);
+  background: url(../images/arrow-up-blue.png) no-repeat;
+  animation: hover_up 1.2s linear infinite normal;
+}
+
+.footer {
+  width: 100%;
+  height: 2.42667rem;
+  position: relative;
+}
+
+.footer .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.footer .swiper-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.f2 {
+  width: 100%;
+  height: 100%;
+  background: #fe657a;
+}
+
+.bg_boy {
+  margin-top: 1.33333rem;
+  margin-left: 1.6rem;
+  width: 8rem;
+  height: 13.33333rem;
+  background: url(../images/boy.gif) no-repeat;
+  background-size: 100% 100%;
+}
+
+.light {
+  position: absolute;
+  top: 1.33333rem;
+  right: -2.53333rem;
+  width: 10.4rem;
+  height: 14.66667rem;
+  background: url(../images/FixDogLight.png) no-repeat;
+  background-size: 100% 100%;
+  transform: skewX(-2deg);
+}
+
+.stars {
+  position: absolute;
+  bottom: 3.33333rem;
+  left: -0.06667rem;
+  width: 8rem;
+  height: 14.66667rem;
+  background: url(../images/starsLeft.png) no-repeat left;
+  background-size: 100% 100%;
+}
+
+.my {
+  position: absolute;
+  bottom: 4.4rem;
+  right: 1.06667rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url(../images/selerTxtRightMe.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.dog {
+  position: absolute;
+  bottom: 2.4rem;
+  right: 1.6rem;
+  width: 0.73333rem;
+  height: 2.93333rem;
+  background: url(../images/selerTxtRightTitle.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.renxin {
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.13333rem;
+  width: 2rem;
+  height: 4.66667rem;
+  background: url(../images/selerTxtRight.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.font1 {
+  position: absolute;
+  top: 0.26667rem;
+  left: 0.6rem;
+  width: 1.73333rem;
+  height: 4.26667rem;
+  background: url(../images/selerTxtLeft01.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.font2 {
+  position: absolute;
+  top: 0.26667rem;
+  left: 0.6rem;
+  width: 1.73333rem;
+  height: 4.26667rem;
+  background: url(../images/selerTxtLeft02.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.font3 {
+  position: absolute;
+  top: 0.26667rem;
+  left: 0.53333rem;
+  width: 1.86667rem;
+  height: 4.26667rem;
+  background: url(../images/selerTxtLeft03.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.font4 {
+  position: absolute;
+  top: 0.26667rem;
+  left: 0.46667rem;
+  width: 1.86667rem;
+  height: 4.26667rem;
+  background: url(../images/selerTxtLeft04.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.withe2 {
+  position: absolute;
+  left: 50%;
+  bottom: 0.26667rem;
+  width: 0.53333rem;
+  height: 0.73333rem;
+  transform: translate(-50%, -50%);
+  background: url(../images/arrow-up.png) no-repeat;
+}
+
+.f3 {
+  width: 100%;
+  height: 100%;
+  background: #09bee3;
+}
+
+.f3 .girl {
+  margin-top: 1.33333rem;
+  margin-left: 0.33333rem;
+  width: 8rem;
+  height: 13.33333rem;
+  background: url(../images/girl.gif) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f3 .light {
+  position: absolute;
+  top: 2.4rem;
+  left: -2.53333rem;
+  width: 10.4rem;
+  height: 14.66667rem;
+  background: url(../images/FixCatLight.png) no-repeat;
+  background-size: 100% 100%;
+  transform: skewX(5deg);
+}
+
+.f3 .my {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url(../images/selerTxtRightMe.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.f3 .dog {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.4rem;
+  width: 0.73333rem;
+  height: 2.93333rem;
+  background: url(../images/marketTxtLeftTitle.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.f3 .renxin {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.53333rem;
+  width: 2rem;
+  height: 4.66667rem;
+  background: url(../images/marketTxtLeft.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.f3 .fo1 {
+  position: absolute;
+  bottom: 0.26667rem;
+  right: 0.53333rem;
+  width: 1.73333rem;
+  height: 4rem;
+  background: url(../images/marketTxtRight04.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.f3 .fo2 {
+  position: absolute;
+  bottom: 0.26667rem;
+  right: 0.53333rem;
+  width: 1.73333rem;
+  height: 4rem;
+  background: url(../images/marketTxtRight03.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.f3 .fo3 {
+  position: absolute;
+  bottom: 0.26667rem;
+  right: 0.4rem;
+  width: 1.86667rem;
+  height: 4rem;
+  background: url(../images/marketTxtRight02.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.f3 .fo4 {
+  position: absolute;
+  bottom: 0.26667rem;
+  right: 0.4rem;
+  width: 1.86667rem;
+  height: 4rem;
+  background: url(../images/marketTxtRight01.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.f4 {
+  width: 100%;
+  height: 100%;
+  background: #36a15c;
+}
+
+.f4 .bg_boy {
+  position: absolute;
+  right: 0;
+  top: -1.33333rem;
+  width: 10rem;
+  height: 15.33333rem;
+  background: url(../images/catFix.gif) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f4 .bg_boy2 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 10rem;
+  height: 15.33333rem;
+  background: url(../images/dogFix.gif) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f4 .light {
+  position: absolute;
+  top: 0rem;
+  right: 0.66667rem;
+  width: 8.66667rem;
+  height: 15.33333rem;
+  background: url(../images/FixDogLight.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f4 .light2 {
+  position: absolute;
+  top: 0rem;
+  left: 0.66667rem;
+  width: 8.66667rem;
+  height: 15.33333rem;
+  background: url(../images/FixCatLight.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f4 .xuan {
+  z-index: 8;
+  position: absolute;
+  top: 0.66667rem;
+  left: 0rem;
+  width: 9.33333rem;
+  height: 12rem;
+  background: url(../images/FixDogTxt.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f4 .x2 {
+  top: 0.66667rem;
+  right: 0rem;
+  background: url(../images/FixCatTxt.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f4 .dashi {
+  position: absolute;
+  left: 0;
+  top: 1.6rem;
+  width: 10rem;
+  height: 13.33333rem;
+  background: url(../images/FixDogBtn.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f4 .qicai {
+  position: absolute;
+  right: 0;
+  top: 1.6rem;
+  width: 10rem;
+  height: 13.33333rem;
+  background: url(../images/FixCatBtn.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f4 .you {
+  position: absolute;
+  left: 50%;
+  bottom: 0.93333rem;
+  width: 2.4rem;
+  height: 0.93333rem;
+  transform: translate(-50%, 0);
+  background: url(../images/FixArrowTxt.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f4 .you .y2 {
+  position: absolute;
+  top: 0;
+  margin-left: -1.2rem;
+  background: url(../images/FixArrowTxtYou.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f5 {
+  width: 100%;
+  height: 100%;
+  background: #669cff;
+}
+
+.f5 .chaoyue {
+  position: absolute;
+  left: 50%;
+  width: 4rem;
+  height: 2.4rem;
+  margin-top: 1.2rem;
+  transform: translate(-50%, 0);
+  background: url(../images/titlesAcoreSummer.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f5 .dian {
+  position: absolute;
+  top: 2.66667rem;
+  left: 50%;
+  width: 0.06667rem;
+  height: 1.33333rem;
+  margin-top: 2.26667rem;
+  transform: translate(-50%, 0);
+  background: url(../images/titlesDots.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f5 .job {
+  position: absolute;
+  left: 0.26667rem;
+  bottom: 2.66667rem;
+  width: 9.33333rem;
+  height: 6.4rem;
+  background: url(../images/jobTitle01.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f5 .j2 {
+  background: url(../images/jobTitle02.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f5 .j3 {
+  background: url(../images/jobTitle03.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f5 .j4 {
+  background: url(../images/jobTitle04.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f5 .j5 {
+  background: url(../images/jobTitle05.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f5 .j6 {
+  background: url(../images/jobTitle06.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f5 .j7 {
+  background: url(../images/jobTitle07.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f5 .j8 {
+  background: url(../images/jobTitle08.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f6 {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.f6 .end {
+  position: absolute;
+  left: 50%;
+  width: 6.66667rem;
+  height: 0.73333rem;
+  margin-top: -2rem;
+  transform: translate(-50%, 0);
+  background: url(../images/endTxt2015.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f6 .input {
+  position: absolute;
+  border: 1px solid #ccc;
+  left: 50%;
+  width: 6.66667rem;
+  height: 0.73333rem;
+  margin-top: 0.26667rem;
+  transform: translate(-50%, 0);
+  background: url(../images/searchTxt.png) no-repeat left center;
+  background-size: 41% 46%;
+}
+
+.f6 .btn {
+  position: absolute;
+  background: #669cff;
+  top: -0.26667rem;
+  right: 0;
+  width: 0.8rem;
+  height: 0.73333rem;
+  margin-top: 0.26667rem;
+}
+
+.f6 .btn img {
+  width: 100%;
+  height: 100%;
+}
+
+.f6 .foot1 {
+  position: absolute;
+  bottom: 3.33333rem;
+  left: 50%;
+  width: 2.4rem;
+  height: 0.4rem;
+  transform: translate(-50%, 0);
+  background: url(../images/endBtnGuide.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f6 .fo1 {
+  position: absolute;
+  left: 1.6rem;
+  bottom: 2.26667rem;
+  width: 3.06667rem;
+  height: 0.93333rem;
+  background: url(../images/btnFollowNestle.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.f6 .fo2 {
+  position: absolute;
+  right: 1.6rem;
+  bottom: 2.26667rem;
+  width: 3.06667rem;
+  height: 0.93333rem;
+  background: url(../images/btnJoin.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.myAni {
+  animation-name: img_show;
+}
+
+@keyframes bg_box {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes img_show {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes hover_up {
+  0% {
+    top: 0.26667rem;
+    background: url(../images/arrow-up-blue.png) no-repeat;
+  }
+  100% {
+    top: 0rem;
+    background: url(../images/arrow-up.png) no-repeat;
+  }
+}
