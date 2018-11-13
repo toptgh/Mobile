@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 44px;
+    background: darkcyan;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 44px;
+    bottom: 49px;
+    overflow: hidden;
+}
+.tabs{
+    width: 100%;
+    height: 49px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: darkcyan;
+}
+.home{
+    height: 160px;
+    background: #ccc;
+}
+.hot{
+    height: 260px;
+    background:red;
+}
+.discover{
+    height: 360px;
+    background: green;
+}
+.setting{
+    height: 260px;
+    background: pink;
+}
+.more{
+    height: 160px;
+    background: purple;
+}
+
+.refresh,.load{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #999;
+    background: blanchedalmond;
+}
+@keyframes rotate{
+    0%{transform: rotate(0)}
+    100%{transform: rotate(360deg)}
+}
+.refresh.active .down,.load.active .loadUp{
+    animation: rotate 500ms infinite linear;
+    display: inline-block;
+}
+
+.down,.loadUp{
+    transition: transform 200ms;
+    display: inline-block;
+}
+.refresh.up .down,.load.down .loadUp{
+    transform: rotate(180deg);
+}

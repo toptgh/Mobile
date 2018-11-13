@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header></header>
+    <div class="content">
+        <div class="wrap">
+
+            <div class="refresh">
+                <span class="down">↓</span>
+                <span class="update">下拉刷新...</span>
+            </div>
+
+            <div class="home">往下拉</div>
+            <div class="hot">hot</div>
+            <div class="discover">discover</div>
+            <div class="setting">setting</div>
+            <div class="more">more</div>
+
+            <div class="load">
+                <span class="loadUp">↑</span>
+                <span class="updateMore">上拉加载更多...</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="tabs"></div>
+
+    <script src="build/iscroll-probe.js"></script>
+    <script>
+        var myScroll = new IScroll('.content', {
+            tap: true, //移动端点击事件
+            click: true, //PC端点击事件
+            bounce: true, //弹簧效果
+            probeType: 3 //滚动监听深度
+        });
+
+        myScroll.scrollTo(0, -80, 0) //滚动指定位置
+        
+        //监听停止滚动事件
+        myScroll.on('scrollEnd', () => {
+            console.log(myScroll.y);
+            if (myScroll.y < 0 && myScroll.y > -80) {
+                myScroll.scrollTo(0, -80, 200);
+            } else if (myScroll.y >= 0) {
+                document.querySelector('.refresh').className = 'refresh active';
+                document.querySelector('.down').innerText = '❤';
+                document.querySelector('.update').innerText = '正在刷新...';
+
+                //模仿发送请求
+                setTimeout(() => {
+                    console.log('刷新完成');
+                    document.querySelector('.refresh').className = 'refresh';
+                    document.querySelector('.update').innerText = '下拉刷新...';
+                    document.querySelector('.down').innerText = '↓';
+                    myScroll.scrollTo(0, -80, 200);
+                }, 2000)
+
+
+            } else if (myScroll.y < (myScroll.maxScrollY + 80) && myScroll.y > myScroll.maxScrollY) {
+                myScroll.scrollTo(0, myScroll.maxScrollY + 80, 200);
+
+            } 
+            else if (myScroll.y <= myScroll.maxScrollY) {
+                document.querySelector('.load').className = 'load active';
+                document.querySelector('.loadUp').innerText = '❤';
+                document.querySelector('.updateMore').innerText = '正在加载..';
+
+                setTimeout(() => {
+                    console.log('加载完成');
+                    document.querySelector('.load').className = 'load';
+                    document.querySelector('.updateMore').innerText = '上拉加载...';
+                    document.querySelector('.loadUp').innerText = '↑';
+                    myScroll.scrollTo(0, myScroll.maxScrollY + 80, 200);
+                }, 2000)
+            }
+
+        })
+
+        //监听下拉提示释放
+        myScroll.on('scroll', () => {
+            if (myScroll.y >= 0) {
+                document.querySelector('.refresh').className = 'refresh up';
+                document.querySelector('.update').innerText = '释放立即刷新...';
+            } else {
+                document.querySelector('.refresh').className = 'refresh';
+                document.querySelector('.update').innerText = '下拉刷新...';
+            }
+            if (myScroll.y <= myScroll.maxScrollY) {
+                document.querySelector('.load').className = 'load down';
+                document.querySelector('.updateMore').innerText = '释放立即加载...';
+            } else {
+                document.querySelector('.load').className = 'load';
+                document.querySelector('.updateMore').innerText = '下拉加载...';
+            }
+
+        })
+    </script>
+</body>
+
+</html>
