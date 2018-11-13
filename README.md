@@ -4,4 +4,4 @@
 
 #雀巢：http://www.tgh1997.club/Mobile/quechao/index.html
 
-#上下拉刷新：http://www.tgh1997.club/Mobile//index.html
+#上下拉刷新：http://www.tgh1997.club/Mobile/iscroll/index.html
